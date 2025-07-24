@@ -1,0 +1,18 @@
+[
+  {
+    "name": "@smoke Valid Login",
+    "username": "Admin",
+    "password": "admin123",
+    "expectedUrlRegex": "/dashboard",
+    "shouldSucceed": true ,
+    "tag": "@smoke"
+  },
+  {
+    "name": "@regression Invalid Login",
+    "username": "InvalidUser",
+    "password": "wrongpass",
+    "expectedError": "Invalid credentials",
+    "shouldSucceed": false ,
+    "tag": "@regression"
+  }
+]
